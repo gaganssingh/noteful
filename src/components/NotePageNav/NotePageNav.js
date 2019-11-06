@@ -1,5 +1,5 @@
 import React from "react";
-import CircleButton from "../CircleButton/CircleButton";
+import Button from "../Button/Button";
 import ApiContext from "../../ApiContext";
 import "./NotePageNav.css";
 
@@ -23,7 +23,7 @@ class NotePageNav extends React.Component {
 		const folder = findFolder(folders, note.folderId);
 		return (
 			<div className="NotePageNav">
-				<CircleButton
+				<Button
 					tag="button"
 					role="link"
 					onClick={() => this.props.history.goBack()}
@@ -31,7 +31,7 @@ class NotePageNav extends React.Component {
 				>
 					<br />
 					Back
-				</CircleButton>
+				</Button>
 				{folder && <h3 className="NotePageNav__folder-name">{folder.name}</h3>}
 			</div>
 		);

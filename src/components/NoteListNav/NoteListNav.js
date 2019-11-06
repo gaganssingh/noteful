@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import ApiContext from "../../ApiContext";
-import CircleButton from "../CircleButton/CircleButton";
+import Button from "../Button/Button";
 import "./NoteListNav.css";
 
 const countNotesForFolder = (notes = [], folderId) => notes.filter((note) => note.folderId === folderId).length;
@@ -24,10 +24,10 @@ class NoteListNav extends React.Component {
 					))}
 				</ul>
 				<div className="NoteListNav__button-wrapper">
-					<CircleButton tag={Link} to="/add-folder" type="button" className="NoteListNav__add-folder-button">
+					<Button tag={Link} to="/add-folder" type="button" className="NoteListNav__add-folder-button">
 						<br />
 						Folder
-					</CircleButton>
+					</Button>
 				</div>
 			</div>
 		);

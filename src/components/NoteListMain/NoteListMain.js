@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ApiContext from "../../ApiContext";
 import Note from "../Note/Note";
-import CircleButton from "../CircleButton/CircleButton";
+import Button from "../Button/Button";
 import "./NoteListMain.css";
 
 const getNotesForFolder = (notes = [], folderId) =>
@@ -30,10 +30,10 @@ export default class NoteListMain extends React.Component {
 					))}
 				</ul>
 				<div className="NoteListMain__button-container">
-					<CircleButton tag={Link} to="/add-note" type="button" className="NoteListMain__add-note-button">
+					<Button tag={Link} to="/add-note" type="button" className="NoteListMain__add-note-button">
 						<br />
 						Note
-					</CircleButton>
+					</Button>
 				</div>
 			</section>
 		);
