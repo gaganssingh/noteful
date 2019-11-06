@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Button from "../Button/Button";
 import ApiContext from "../../ApiContext";
 import "./NotePageNav.css";
@@ -37,5 +38,10 @@ class NotePageNav extends React.Component {
 		);
 	}
 }
+
+NotePageNav.propTypes = {
+	history : PropTypes.object.isRequired,
+	match   : PropTypes.object.isRequired
+};
 
 export default NotePageNav;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import ApiContext from "../../ApiContext";
 import config from "../../config";
+import PropTypes from "prop-types";
 import "./Note.css";
 
 class Note extends React.Component {
@@ -53,5 +54,12 @@ class Note extends React.Component {
 		);
 	}
 }
+
+Note.propTypes = {
+	name         : PropTypes.string,
+	id           : PropTypes.string,
+	modified     : PropTypes.string,
+	onDeleteNote : PropTypes.func.isRequired
+};
 
 export default Note;

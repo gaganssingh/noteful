@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import ApiContext from "../../ApiContext";
 import Note from "../Note/Note";
 import Button from "../Button/Button";
@@ -8,7 +9,7 @@ import "./NoteListMain.css";
 const getNotesForFolder = (notes = [], folderId) =>
 	!folderId ? notes : notes.filter((note) => note.folderId === folderId);
 
-export default class NoteListMain extends React.Component {
+class NoteListMain extends React.Component {
 	static defaultProps = {
 		match : {
 			params : {}
@@ -39,3 +40,9 @@ export default class NoteListMain extends React.Component {
 		);
 	}
 }
+
+NoteListMain.propTypes = {
+	match : PropTypes.object.isRequired
+};
+
+export default NoteListMain;

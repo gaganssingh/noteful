@@ -2,9 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
 
-export default function Button(props) {
+function Button(props) {
 	const { tag, className, childrenm, ...otherProps } = props;
-
 	return React.createElement(
 		props.tag,
 		{
@@ -24,5 +23,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
 	className : PropTypes.string.isRequired,
-	children  : PropTypes.string.isRequired
+	children  : PropTypes.array.isRequired
 };
+
+export default Button;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ApiContext from "../../ApiContext";
 
 class FolderPicker extends React.Component {
@@ -16,5 +17,9 @@ class FolderPicker extends React.Component {
 		);
 	}
 }
+
+FolderPicker.propTypes = {
+	assignFolderId : PropTypes.func.isRequired
+};
 
 export default FolderPicker;

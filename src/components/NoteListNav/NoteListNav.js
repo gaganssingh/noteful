@@ -4,13 +4,12 @@ import ApiContext from "../../ApiContext";
 import Button from "../Button/Button";
 import "./NoteListNav.css";
 
-const countNotesForFolder = (notes = [], folderId) => notes.filter((note) => note.folderId === folderId).length;
-
 class NoteListNav extends React.Component {
 	static contextType = ApiContext;
 
 	render() {
 		const { folders = [], notes = [] } = this.context;
+		const countNotesForFolder = (notes = [], folderId) => notes.filter((note) => note.folderId === folderId).length;
 		return (
 			<div className="NoteListNav">
 				<ul className="NoteListNav__list">
