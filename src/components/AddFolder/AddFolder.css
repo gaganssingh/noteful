@@ -1,26 +1,9 @@
-.newFolder {
-	color: white;
+.AddFolder {
+	color: azure;
+	width: 40%;
+	margin-left: 20px;
 }
 
-.create-folder-input {
-	margin: 10px;
-}
-
-/* .create-folder-button {
-	background-color: #cacaca;
-	border-radius: 30px;
-	border: 0;
-	color: black;
-	display: block;
-	font-size: 12px;
-	font-weight: bold;
-	height: 60px;
-	padding: 8px;
-	text-align: center;
-	text-decoration: none;
-	width: 60px;
-} */
-
-.folderCreation_button:hover {
+.AddFolder_button:hover {
 	cursor: pointer;
 }

@@ -73,7 +73,7 @@ class AddFolder extends React.Component {
 					<input type="text" name="name" onChange={(e) => this.addFolderName(e.target.value)} />
 					{this.state.name.touched && <ValidationError message={this.validateName()} />}
 					<div className="AddFolder__hint">* required field</div>
-					<button type="submit" className="AddFolder-button" disabled={this.validateName()}>
+					<button type="submit" className="AddFolder_button" disabled={this.validateName()}>
 						Add Folder
 					</button>
 				</CatchError>

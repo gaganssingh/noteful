@@ -25,7 +25,7 @@ class NoteListNav extends React.Component {
 				<div className="NoteListNav__button-wrapper">
 					<Button tag={Link} to="/add-folder" type="button" className="NoteListNav__add-folder-button">
 						<br />
-						Folder
+						Add Folder
 					</Button>
 				</div>
 			</div>

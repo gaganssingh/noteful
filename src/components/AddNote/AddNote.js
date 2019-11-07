@@ -4,7 +4,7 @@ import config from "../../config";
 import CatchError from "../../ErrorBoundries/CatchError";
 import ValidationError from "../../ErrorBoundries/ValidationError";
 import FolderPicker from "../FolderPicker/FolderPicker";
-import "./AddNote";
+import "./AddNote.css";
 
 class AddNote extends React.Component {
 	static contextType = ApiContext;
@@ -93,7 +93,7 @@ class AddNote extends React.Component {
 		const folder = this.state.folderId.value;
 		const noteName = this.state.name.value.trim();
 		const noteText = this.state.content.value.trim();
-		if (folder === null || noteName.length === null || noteText.length === null) {
+		if (folder === null || noteName.length === 0 || noteText.length === 0) {
 			return "Please enter all fields marked with *";
 		}
 	}

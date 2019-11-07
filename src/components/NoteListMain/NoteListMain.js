@@ -33,7 +33,7 @@ class NoteListMain extends React.Component {
 				<div className="NoteListMain__button-container">
 					<Button tag={Link} to="/add-note" type="button" className="NoteListMain__add-note-button">
 						<br />
-						Note
+						Add Note
 					</Button>
 				</div>
 			</section>

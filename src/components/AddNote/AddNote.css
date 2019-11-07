@@ -1,38 +1,19 @@
-.newNote {
-	color: white;
+.AddNote {
+	color: azure;
+	width: 40%;
+	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 }
 
-.noteCreation {
-	margin: 10px;
-	width: 25vw;
+.AddNote .label-text {
+	color: azure;
 }
 
-.noteContentCreation {
-	width: 25vw;
-	margin: 10px;
+.registration__hint {
+	margin: 10px 0;
 }
 
-.noteCreation_button {
-	background-color: #cacaca;
-	border-radius: 30px;
-	border: 0;
-	color: black;
-	display: block;
-	font-size: 12px;
-	font-weight: bold;
-	height: 60px;
-	padding: 8px;
-	text-align: center;
-	text-decoration: none;
-	width: 60px;
-}
-
-a.noteCreation_button {
-	padding: 16px 8px 8px;
-}
-
-.noteCreation_button:hover {
+.AddNote_button:hover {
 	cursor: pointer;
 }
