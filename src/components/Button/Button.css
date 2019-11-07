@@ -15,6 +15,7 @@
 
 a.Button {
 	padding: 16px 8px 8px;
+	align-content: center;
 }
 
 .Button:hover {
