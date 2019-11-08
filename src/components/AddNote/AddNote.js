@@ -107,6 +107,7 @@ class AddNote extends React.Component {
 					<label htmlFor="name">Note Name *</label>
 					<input
 						type="text"
+						id="name"
 						name="name"
 						onChange={(e) => {
 							this.addNoteName(e.target.value);
@@ -121,6 +122,7 @@ class AddNote extends React.Component {
 					<input
 						type="text"
 						name="noteText"
+						id="noteText"
 						onChange={(e) => {
 							this.addNoteContent(e.target.value);
 							this.addModifiedDate(date);

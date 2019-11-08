@@ -7,7 +7,11 @@ class FolderPicker extends React.Component {
 
 	render() {
 		return (
-			<select className="FolderPicker ui dropdown" onChange={(e) => this.props.assignFolderId(e.target.value)}>
+			<select
+				className="FolderPicker"
+				id="FolderPicker"
+				onChange={(e) => this.props.assignFolderId(e.target.value)}
+			>
 				{this.context.folders.map((folder) => (
 					<option key={folder.id} value={folder.id}>
 						{folder.name}
